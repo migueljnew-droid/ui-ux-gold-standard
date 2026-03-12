@@ -3,7 +3,7 @@
 <br />
 
 <picture>
-  <img src="assets/banner.png" alt="GENESIS UI/UX Gold Standard" width="100%" />
+  <img src="assets/banner.svg" alt="GENESIS UI/UX Gold Standard" width="100%" />
 </picture>
 
 <br /><br />

@@ -252,7 +252,7 @@ ui-ux-gold-standard/
 
 <div align="center">
 
-**Built by [Louis Gold](https://github.com/migueljnew-droid)**&nbsp;&nbsp;·&nbsp;&nbsp;Powered by GENESIS
+**Built by [Miguel Jiminez](https://github.com/migueljnew-droid)**&nbsp;&nbsp;·&nbsp;&nbsp;Powered by GENESIS
 
 <br />
 

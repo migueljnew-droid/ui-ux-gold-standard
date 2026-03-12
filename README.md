@@ -2,6 +2,12 @@
 
 <br />
 
+<picture>
+  <img src="assets/banner.svg" alt="GENESIS UI/UX Gold Standard" width="100%" />
+</picture>
+
+<br /><br />
+
 <img src="https://img.shields.io/badge/GENESIS-UI%2FUX%20GOLD%20STANDARD-000000?style=for-the-badge&labelColor=B8860B&color=000000" alt="GENESIS UI/UX Gold Standard" />
 
 <br /><br />

@@ -40,29 +40,6 @@
       <stop offset="100%" style="stop-color:#DAA520;stop-opacity:0"/>
     </linearGradient>
 
-    <!-- Particle glow filter -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
-    <!-- Text shadow for depth -->
-    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feFlood flood-color="#DAA520" flood-opacity="0.3"/>
-      <feComposite in2="blur" operator="in"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Noise texture -->
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-      <feColorMatrix type="saturate" values="0"/>
-    </filter>
-
     <!-- Diamond pattern -->
     <pattern id="diamonds" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M20,0 L40,20 L20,40 L0,20 Z" fill="none" stroke="#DAA520" stroke-width="0.3" opacity="0.08"/>
@@ -76,9 +53,6 @@
 
   <!-- Deep background -->
   <rect width="1200" height="400" fill="url(#bgGlow)"/>
-
-  <!-- Noise texture overlay for depth -->
-  <rect width="1200" height="400" filter="url(#noise)" opacity="0.015"/>
 
   <!-- Diamond pattern left -->
   <rect x="0" y="0" width="350" height="400" fill="url(#diamonds)" opacity="0.7"/>
@@ -141,7 +115,7 @@
   </g>
 
   <!-- Floating particles -->
-  <g filter="url(#glow)">
+  <g>
     <circle cx="150" cy="50" r="1.5" fill="#DAA520" opacity="0.5"/>
     <circle cx="320" cy="120" r="1" fill="#FFD700" opacity="0.4"/>
     <circle cx="450" cy="60" r="1.2" fill="#DAA520" opacity="0.35"/>
@@ -183,7 +157,7 @@
   <text x="600" y="119" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="300" font-size="10" fill="#DAA520" letter-spacing="6" opacity="0.45">THE ULTIMATE DESIGN SKILL</text>
 
   <!-- Main title with glow -->
-  <text x="600" y="170" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="900" font-size="64" fill="url(#goldTitle)" letter-spacing="8" filter="url(#textGlow)">
+  <text x="600" y="170" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="900" font-size="64" fill="url(#goldTitle)" letter-spacing="8">
     GENESIS
   </text>
 
